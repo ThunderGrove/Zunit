@@ -1,16 +1,25 @@
 public class TestClass extends TestSuite{
     @Override
     protected void testList(){
-        testThis();
-        testThat();
+        testInt1();
+        testInt2();
+        testDouble1();
+        testDouble2();
     }
 
-    public void testThis(){
-        int result=5;
-        assertEquals(5,5,"testThis failed");
+    public void testInt1(){
+        assertEquals(5,5,"Int test 1 failed");
     }
 
-    public void testThat(){
-        assertEquals(3,7,"testThat failed");
+    public void testInt2(){
+        assertEquals(3,7,"Int test 2 failed");
+    }
+
+    public void testDouble1(){
+        assertEquals(10.0001,10.0001,"Double test 1 failed");
+    }
+
+    public void testDouble2(){
+        assertEquals(0.5,0.9,"Double test 2 failed");
     }
 }

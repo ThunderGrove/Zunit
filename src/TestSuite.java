@@ -22,4 +22,40 @@ public abstract class TestSuite{
             failed++;
         }
     }
+
+    public void assertEquals(long expected,long actual,String msg){
+        if(expected==actual){
+            passed++;
+        }else{
+            System.out.println("Failed: Expected "+expected+" but received "+actual+"\n"+msg);
+            failed++;
+        }
+    }
+
+    public void assertEquals(double expected,double actual,String msg){
+        if(expected==actual){
+            passed++;
+        }else{
+            System.out.println("Failed: Expected "+expected+" but received "+actual+"\n"+msg);
+            failed++;
+        }
+    }
+
+    public void assertEquals(String expected,String actual,String msg){
+        if(expected.equals(actual)){
+            passed++;
+        }else{
+            System.out.println("Failed: Expected "+expected+" but received "+actual+"\n"+msg);
+            failed++;
+        }
+    }
+
+    public void assertEquals(float expected,float actual,String msg){
+        if(expected==actual){
+            passed++;
+        }else{
+            System.out.println("Failed: Expected "+expected+" but received "+actual+"\n"+msg);
+            failed++;
+        }
+    }
 }
